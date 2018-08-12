@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+}
+h1 {
+  padding: 10px;
+  letter-spacing: 0.2rem;
+}
+ul {
+  text-align: center;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  margin: 10px;
+}
+
+ul li a {
+  color: #fff;
+}
+
+img {
+  max-height: 400px;
+  padding: 15px;
+}
+#content {
+  min-height: 350px;
+}
+
+/* in/out, active- transition(how long) */
+.slide-fade-enter {
+  transform: translateX(40px);
+  opacity: 0;
+}
+.slide-fade-leave-to {
+  transform: translateX(-40px);
+  opacity: 0;
+}
+.slide-fade-enter-active {
+  transition: 0.5s ease;
+}
+.slide-fade-leave-active {
+  transition: 0.3s ease;
+}
